@@ -1,6 +1,9 @@
 name: CI Staging
 
 on:
+  push:
+    branches:
+      - staging
   pull_request:
     branches:
       - staging
@@ -11,16 +14,17 @@ jobs:
 
     strategy:
       matrix:
-        node-version: 12.x
+        node-version: [12.x]
     
     steps:
-    - uses: actions/checkout@v1
-    - name: Use Node.js ${{ matrix.node-version }}
+    - uses: actions/checkout@v2
+    # - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
+    - name: Use Node.js ${{matrix.node-version}}
       uses: actions/setup-node@v1
       with:
-        node-version: ${{ matrix.node-version }}
-        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
-        heroku_app_name: ${{ secrets.HEROKU_APP_NAME }}
+        node-version: ${{matrix.node-version}}
+        heroku_api_key: ${{secrets.HEROKU_API_KEY}}
+        heroku_app_name: ${{secrets.HEROKU_APP_NAME}}
         heroku_email: ahmdichsanb@gmail.com
 
     - name: npm install
