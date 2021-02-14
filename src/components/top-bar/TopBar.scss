@@ -1,0 +1,74 @@
+@import "../../scss/Variables.scss";
+
+.navbar-wrapper {
+  background-color: #ffffff;
+  height: 60px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+  &.navbar {
+    padding-left: 20%;
+    padding-right: 20%;
+    padding-top: 0px;
+    padding-bottom: 0px;
+  }
+}
+
+@media (min-width: 700px) and (max-width: 1024px) {
+  .navbar-wrapper {
+    height: 60px;
+
+    &.navbar {
+      padding: 0px;
+    }
+  }
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .navbar-wrapper {
+    min-height: 60px;
+    height: auto;
+
+    &.navbar {
+      padding: 0px;
+    }
+  }
+}
+
+.navbar-navitem {
+  display: flex;
+  align-items: center;
+  color: $green-vogue;
+
+  .nav-link {
+    color: $green-vogue;
+  }
+
+  &.active {
+    border-bottom: 3px #219ebc solid;
+  }
+}
+
+.notification-dot {
+  background-color: red;
+  border-radius: 10px;
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  padding: 0px;
+  margin: 0px;
+  top: 0px;
+  left: 7px;
+}
+
+.button-logout {
+  width: 153px;
+  height: 45px;
+  background-color: $company-color-red;
+  color: #ffffff;
+  border-color: $company-color-red;
+}
+
+// override navbar-toggler
+.outline-none.navbar-toggler {
+  outline: none;
+}
