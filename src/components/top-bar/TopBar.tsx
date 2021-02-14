@@ -29,7 +29,7 @@ function NavigationBar(props: HistoryProps) {
         <Nav className="mr-auto h-100 pl-2 pr-2" navbar>
           <NavItem className="navbar-navitem font-size-16">
             <NavLink href="/" onClick={preventDefault}>
-              Ahmad Ichsan Baihaqi<b className="font-size-12 pl-2">Portfolio</b>
+              Ahmad Ichsan Baihaqi<b className="font-size-12 pl-2">Profile</b>
             </NavLink>
           </NavItem>
         </Nav>
