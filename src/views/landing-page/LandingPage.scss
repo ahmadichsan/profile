@@ -1,0 +1,370 @@
+@import "../../scss/Variables.scss";
+
+.about-me-wrapper {
+  min-height: 719px;
+  background: rgba(0, 186, 216, 0.1);
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 75px;
+}
+
+.id-wrapper {
+  margin-top: -75px;
+  padding-top: 75px;
+}
+
+#about-me:before,
+#skills::before,
+#experiences:before,
+#projects:before {
+  display: block;
+  content: " ";
+  visibility: hidden;
+}
+
+.profile-pic {
+  width: 90%;
+  height: auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.about-me {
+  font-size: 26px;
+  color: $green-vogue;
+}
+
+.job-position {
+  color: $cerulean;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.download-cv {
+  width: 117px;
+  height: 37px;
+  background-color: $bright-turquoise-2;
+  color: #ffffff;
+  font-size: 11px;
+  border-radius: 5px;
+  border: none;
+}
+
+.download-cv:hover {
+  background-color: #ffffff;
+  color: $bright-turquoise-2;
+  border: 1px solid;
+  border-color: $bright-turquoise-2;
+}
+
+.mobile-my-name {
+  color: $green-vogue;
+  font-size: 16px;
+  font-weight: 600;
+  display: none;
+}
+
+.about-me-description {
+  margin-top: 90px;
+}
+
+.download-col {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.four-icon-row {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.skills-wrapper {
+  min-height: 617px;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 75px;
+  position: relative;
+  background: url("../../assets/img/skill-bg.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.man-wrap {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+
+.all-skill-wrap {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+  min-height: 70%;
+  display: flex;
+
+  .second-wrap {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
+}
+
+.skill-div-wrap {
+  height: 100%;
+  width: 100%;
+  position: relative;
+}
+
+.title-wrapper {
+  color: $green-vogue;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  div {
+    width: 190px;
+    height: 40px;
+    border: 2px solid #00bad8;
+    border-radius: 20px;
+  }
+}
+
+.experience-title {
+  color: #ffffff;
+  font-weight: 600;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-bottom: 35px;
+
+  div {
+    width: 190px;
+    height: 40px;
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+  }
+}
+
+.experience-list {
+  width: 100%;
+  min-height: 176px;
+  background: #0091c3;
+  border-radius: 5px;
+  padding: 20px;
+  color: #ffffff;
+}
+
+.experiences-wrapper {
+  min-height: 497px;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 75px;
+  background-color: $bright-turquoise-2;
+}
+
+.projects-wrapper {
+  // min-height: 497px;
+  min-height: 426px;
+  padding-left: 20%;
+  padding-right: 20%;
+  margin-bottom: 75px;
+}
+
+#react.react-color {
+  background: #66dcfc;
+}
+
+.skill-icon {
+  width: 100%;
+  position: absolute;
+
+  &#react {
+    bottom: 30%;
+  }
+
+  &#redux {
+    bottom: 50%;
+  }
+
+  &#redux-saga {
+    bottom: 63%;
+  }
+
+  &#sass {
+    bottom: 73%;
+  }
+
+  &#nodejs {
+    bottom: 63%;
+  }
+
+  &#hapijs {
+    bottom: 50%;
+  }
+
+  &#typeorm {
+    bottom: 30%;
+  }
+
+  // &#postgres {
+  //   bottom: 50%;
+  // }
+
+  // &#minio {
+  //   bottom: 30%;
+  // }
+}
+
+@media (min-width: 100px) and (max-width: 700px) {
+  .mobile-my-name {
+    display: block;
+  }
+
+  .four-icon-row {
+    justify-content: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+
+  .experience-title {
+    justify-content: center;
+  }
+
+  .project-icon {
+    width: 50%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 1024px) {
+  .about-me-wrapper,
+  .skills-wrapper,
+  .experiences-wrapper,
+  .projects-wrapper {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+
+  .project-icon {
+    width: 50%;
+  }
+}
+
+@media (min-width: 100px) and (max-width: 768px) {
+  .profile-pic {
+    width: 60%;
+  }
+
+  .about-me {
+    text-align: center;
+  }
+
+  .job-position {
+    text-align: center;
+  }
+
+  .about-me-description {
+    margin-top: 60px;
+  }
+
+  .download-col {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .man {
+    width: 50%;
+  }
+
+  .skills-wrapper {
+    min-height: 500px;
+    background: none;
+  }
+
+  .skill-icon {
+    &#react {
+      bottom: 25%;
+    }
+
+    &#redux {
+      bottom: 38%;
+    }
+
+    &#redux-saga {
+      bottom: 47%;
+    }
+
+    &#sass {
+      bottom: 56%;
+    }
+
+    &#nodejs {
+      bottom: 60%;
+    }
+
+    &#hapijs {
+      bottom: 56%;
+    }
+
+    &#typeorm {
+      bottom: 47%;
+    }
+
+    &#postgres {
+      bottom: 38%;
+    }
+
+    &#minio {
+      bottom: 25%;
+    }
+  }
+
+  .project-icon {
+    width: 80%;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .man {
+    width: 27%;
+  }
+}
+
+.button-view-detail {
+  border: 2px solid #219ebc;
+  background-color: white;
+  color: #11434f;
+  font-weight: bold;
+  font-size: 11px;
+
+  &:hover {
+    background-color: #219ebc;
+    color: white;
+    border: 2px solid #219ebc;
+  }
+}
+
+.ellipsis-two-line {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  height: 40px;
+  margin-bottom: 10px;
+
+  &.project-description {
+    height: 32px;
+  }
+}
+
+.linkedin {
+  color: $cerulean;
+
+  &:hover {
+    color: $cerulean;
+  }
+}
