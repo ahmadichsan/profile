@@ -15,10 +15,14 @@ jobs:
     
     steps:
     - uses: actions/checkout@v1
+    - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
     - name: Use Node.js ${{ matrix.node-version }}
       uses: actions/setup-node@v1
       with:
         node-version: ${{ matrix.node-version }}
+        heroku_api_key: ${{ secrets.HEROKU_API_KEY }}
+        heroku_app_name: ahmdichsan-profile
+        heroku_email: ahmdichsanb@gmail.com
 
     - name: npm install
       run: |
@@ -33,10 +37,10 @@ jobs:
       run: |
         npm run build
 
-    - name: Add remote origin
-      run: |
-        git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
-    - name: Deploy to Heroku
-      run: |
-        git push heroku HEAD:master -f
+    # - name: Add remote origin
+    #   run: |
+    #     git remote add heroku https://heroku:${{ secrets.HEROKU_API_KEY }}@git.heroku.com/${{ secrets.HEROKU_APP_NAME }}.git
+    # - name: Deploy to Heroku
+    #   run: |
+    #     git push heroku HEAD:master -f
 
