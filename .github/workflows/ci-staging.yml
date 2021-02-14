@@ -35,6 +35,7 @@ jobs:
         npm test 
       env:
         CI: true
+        REACT_APP_PERSIST_SECRET: ${{secrets.REACT_APP_PERSIST_SECRET}}
       
     - name: npm run build
       run: |

@@ -1,0 +1,98 @@
+// global font family
+@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+
+// CoreUI Icons Set
+@import "~@coreui/icons/css/free.css";
+
+// Import styles
+@import "~@coreui/coreui/scss/coreui.scss";
+
+// Temp fix for reactstrap
+@import "~@coreui/coreui/scss/_dropdown-menu-right.scss";
+
+// Import Flag Icons Set
+@import "~flag-icon-css/css/flag-icon.min.css";
+
+// Import Font Awesome Icons Set
+@import "~font-awesome/css/font-awesome.min.css";
+
+// Import Simple Line Icons Set
+@import "~simple-line-icons/css/simple-line-icons.css";
+
+// If you want to override variables do it here
+@import "./Variables.scss";
+
+// If you want to create global style do it here
+@import "./Custom.scss";
+
+// default style when create-react-app
+body {
+  margin: 0;
+  font-family: "Poppins", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #ffffff;
+}
+
+.App-link {
+  color: #0ddbbc;
+
+  &:hover {
+    color: #00c2a5;
+  }
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+html body .app.flex-row.align-items-center {
+  height: 100vh;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  background: #ffffff;
+  background-color: #ffffff;
+}
+
+html {
+  scroll-behavior: smooth;
+}
