@@ -14,11 +14,11 @@ jobs:
 
     strategy:
       matrix:
-        node-version: [10.x]
+        node-version: [12.x]
     
     steps:
     - uses: actions/checkout@v2
-    - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
+    # - uses: akhileshns/heroku-deploy@v3.11.10 # This is the action
     - name: Use Node.js ${{matrix.node-version}}
       uses: actions/setup-node@v1
       with:
