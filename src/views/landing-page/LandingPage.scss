@@ -166,7 +166,6 @@
 }
 
 .projects-wrapper {
-  // min-height: 497px;
   min-height: 426px;
   padding-left: 20%;
   padding-right: 20%;
@@ -302,24 +301,24 @@
     }
 
     &#nodejs {
-      bottom: 60%;
-    }
-
-    &#hapijs {
-      bottom: 56%;
-    }
-
-    &#typeorm {
       bottom: 47%;
     }
 
-    &#postgres {
+    &#hapijs {
       bottom: 38%;
     }
 
-    &#minio {
+    &#typeorm {
       bottom: 25%;
     }
+
+    // &#postgres {
+    //   bottom: 38%;
+    // }
+
+    // &#minio {
+    //   bottom: 25%;
+    // }
   }
 
   .project-icon {
