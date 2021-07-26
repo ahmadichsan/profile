@@ -1,7 +1,7 @@
 import React from 'react';
 import { Row, Col, Button } from 'reactstrap';
 import ReactTooltip from 'react-tooltip';
-import ProfilePic from '../../assets/img/profile-pic.svg';
+import ProfilePic from '../../assets/img/profile-pic.png';
 import instagram from '../../assets/icon/instagram.svg';
 import github from '../../assets/icon/github.svg';
 import gitlab from '../../assets/icon/gitlab.svg';
