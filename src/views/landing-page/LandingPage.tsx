@@ -94,7 +94,7 @@ export default function LandingPage() {
                   </Col>
 
                   <Col md={2} lg={2} sm={2} xs={2} className="center-content">
-                    <a href="https://medium.com/@ahmadichsanbaihaqi" target="_blank" rel="noopener noreferrer">
+                    <a href="https://ahmdichsanbaihaqi.medium.com/" target="_blank" rel="noopener noreferrer">
                       <Button className="center-content btn-no-outline" color="transparent">
                         <img src={medium} alt="medium" />
                       </Button>
